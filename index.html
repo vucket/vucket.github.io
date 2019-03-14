@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/fav/gear-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/fav/gear-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/fav/gear-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/fav/gear-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/fav/gear-72.png">
+    <link rel="apple-touch-icon-precomposed" href="/fav/gear-57.png">
+    <link rel="icon" href="/fav/gear-32.png" sizes="32x32">
+    <link rel="icon" type="image/x-icon" href="/fav/favicon.ico">
+
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="author" content="Sergio Javier Valderrama Vidaurre">
+    <meta name="description" content="Game designer/developer - Software developer - Mechatronic engineer">
+    <meta property="og:description" content="Game designer/developer - Software developer - Mechatronic engineer" />
+    <meta property="og:image" content="http://vucket.teamgesh.com/img/prev.jpg" />
+    <meta property="og:title" content="Sergio Valderrama - Portfolio" />
+   <title>Sergio Valderrama - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/three.min.js"></script>
+<script src="js/libs/threeLibs/Detector.js"></script>
+<script src="js/libs/threeLibs/loaders/OBJLoader.js"></script>
+<script src="js/libs/threeLibs/renderers/CSS3DRenderer.js"></script>
+<script src="js/libs/threeLibs/libs/tween.min.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+<div class="warn-panel">
+    <p style="padding: 15px">
+        This web page only works on devices with a <span class="just-cyan">greater aspect ratio</span>.
+        <br>
+        <br>
+        If you are on a <span class="just-cyan">phone</span>, please try <span class="just-cyan">rotating</span> your screen to <span class="just-cyan">landscape</span>.
+        <br>
+        <br>
+        You will get the full experience on a <span class="just-cyan">PC</span>.
+    </p>
+</div>
+<div class="lag-panel">
+    <button class="lag-btn">Is it lagging? Click here!</button>
+    <button class="close">X</button>
+</div>
+<div id="video-panel" class="hidden">
+    <button class="close">X</button>
+    <iframe id="iframe-video" src="" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+<div id="console" class="hidden">
+    <p>
+        <span style="float: left;">SV:\></span>
+    </p>
+    <p class="console-field">
+        <span id="caption"> </span>
+        <span id="cursor">_</span>
+    </p>
+</div>
+<div>
+    <div id="about" data-index="0" class="menu-item hidden">
+        <div class="tooltip-parent">
+            <img src="img/sjvv2.jpg" alt="me" class="img-circle" width="100%" height="100%">
+            <span class="tooltip-text">About me</span>
+        </div>
+    </div>
+    <div id="projects" data-index="1" class="menu-item hidden">
+        <div class="tooltip-parent">
+            <img src="img/projects.jpg" alt="me" class="img-circle" width="100%" height="100%">
+            <span class="tooltip-text">Projects</span>
+        </div>
+    </div>
+    <div id="skills" data-index="2" class="menu-item hidden">
+        <div class="tooltip-parent">
+            <img src="img/skills.jpg" alt="me" class="img-circle" width="100%" height="100%">
+            <span class="tooltip-text">Skills</span>
+        </div>
+    </div>
+    <div id="contact" data-index="3" class="menu-item hidden">
+        <div class="tooltip-parent">
+            <img src="img/contact.jpg" alt="me" class="img-circle" width="100%" height="100%">
+            <span class="tooltip-text">Contact</span>
+        </div>
+    </div>
+</div>
+<div id="content-panel" class="hidden">
+    <div id="content-0" class="scroll content content-p">
+        <h2 class="dynamic-color">Full name</h2>
+        <ul>
+            <li>Sergio Javier Valderrama Vidaurre</li>
+        </ul>
+        <h2 class="dynamic-color">Nick name</h2>
+        <ul>
+            <li>Valde (Spanish)</li>
+            <li>Vucket (English)</li>
+        </ul>
+        <h2 class="dynamic-color">Education</h2>
+        <ul>
+            <li>MSc. in Games Technology at ITU, Denmark (2018)</li>
+            <li>BSc. in Mechatronics Engineering at UCB, Bolivia (2014)</li>
+        </ul>
+        <h2 class="dynamic-color">Jobs</h2>
+        <ul>
+            <li>Game designer/developer at <a target="_blank" href="https://www.facebook.com/UntamedFox/">Untamed Fox</a>(2018-Present)</li>
+            <li>Software developer at <a target="_blank" href="http://www.mojix.com/">Mojix</a>(2014-2016)</li>
+            <li>CTO of <a target="_blank" href="https://goo.gl/hJA4Ak">Team GESH</a> (2014-2016)</li>
+        </ul>
+        <h2 class="dynamic-color">Most relevant awards</h2>
+        <ul>
+            <li>Summa cum laude - Mechatronics Engineering - UCB, Bolivia (2014)</li>
+            <li>Honorable mention - XV IBEROAMERICAN PHYSICS OLYMPIAD (2010)</li>
+        </ul>
+        <h2 class="dynamic-color">Own quotes</h2>
+        <ul>
+            <li>"I can prototype whatever you want for tomorrow, if you don't mind just having cubes as graphics"</li>
+            <li>"Life is a game and God is the master game designer" </li>
+        </ul>
+        <h2 class="dynamic-color">Random facts</h2>
+        <ul>
+            <li>Born in 1993 - La Paz, Bolivia</li>
+            <li>Does not drink a lot of coffee, but a lot of yogurt</li>
+            <li>Plays videogames songs on the violin</li>
+            <li>Likes mashed potatoes</li>
+            <li>Favorite song: <a target="_blank" href=https://www.youtube.com/watch?v=O3TsVaFR870">Theocracy - I am</a></li>
+            <li>Favorite childhood videogame: Crash Bandicoot: Warped</li>
+        </ul>
+    </div>
+    <div id="content-1" class="content content-p">
+        <div class="projects-tab">
+            <div class="tab">
+                <button id="project-tab-5" class="tablinks active dynamic-background">Human Machine<br/>PetSkatJam 2016</button>
+                <button id="project-tab-4" class="tablinks" >Væk<br/>Game Design 2016</button>
+                <button id="project-tab-3" class="tablinks" >Blind Run<br/>OCJ 2016</button>
+                <button id="project-tab-2" class="tablinks" >Super Smartket<br/>RIoT 2016</button>
+                <button id="project-tab-1" class="tablinks" >Taki Runa<br/>GGJ 2016</button>
+                <button id="project-tab-0" class="tablinks" >My Little Friend<br/>ISR 2015</button>
+            </div>
+        </div>
+        <div class="projects-tab-content">
+            <div id="project-5" class="scroll content content-p active">
+                <h2 class="dynamic-color">Human Machine - PetSkatJam</h2>
+                <p>
+                    Phish your friends! Fool your family! Scam people and become the best social engineer the interweb has ever seen.
+                    Gather information, trick people into opening your malicious executables or directly phish for
+                    credit card access to make them join the game!
+                    <br>
+                    Honestly, being more convincing than a Nigerian prince
+                    or a beautiful yet lonely Russian bride can not be that difficult!
+                    Impersonate the impostor and be part of the phishing community.
+                    <br>
+                    <br>
+                    <i>Project developed at ITU - Copenhagen, Denmark</i>
+                    <br>
+                    <br>
+                    <i>by Holger Stadel Borum,
+                        Carl Johan Hanberg,
+                        Niels Andreas Østman,
+                        Jonas Christopher Schneider,
+                        and Sergio Javier Valderrama Vidaurre.
+                        <br>
+                        Webfont provided by Gabriel Richter.</i>
+                    <br><br>
+                    <a target="_blank" href="https://en.itu.dk/about-itu/press/news-from-itu/students-gave-pet-and-skat-a-playful-makeover">Press note</a>
+                    <br>
+                </p>
+                <div class="img-ctn">
+                    <img class="video-img" src="img/human-machine.jpg"/>
+                </div>
+            </div>
+            <div id="project-4" class="scroll content content-p">
+                <h2 class="dynamic-color">Væk - A new embodied play experience</h2>
+                <p>Væk is an alternative controller game that facilitates meaningful interaction
+                    between parents, children, and a plush toy.
+                    <br>
+                    <br>
+                    <i>Game developed at ITU - Copenhagen, Denmark</i>
+                    <br>
+                    <br>
+                    <i>by Atanas Slavov,
+                        Becky Nielsen,
+                        Jonas Schneider,
+                        Kristian Svane Rømer,
+                        Ole Stobbe,
+                        Milan Jacevic,
+                        Sergio Valderrama</i>
+                </p>
+                <div class="video-ctn" data-url="https://player.vimeo.com/video/194102494?autoplay=1&title=0&byline=0&portrait=0">
+                    <span class="video-play-icon"></span>
+                    <img class="video-img" src="img/veak.jpg" alt="Veak - Video trailer" />
+                </div>
+            </div>
+            <div id="project-3" class="scroll content content-p">
+                <h2 class="dynamic-color">Blind run - A game for people with visual impairments</h2>
+                <p> We wanted to give people with visual impairments the unique experience
+                    of taking a walk guided by a guide dog in the city.
+                    <br>
+                    The player just has to press space when the dog starts to bark louder to avoid danger.
+                    The game contains a lot of familiar sounds from our city La Paz.
+                    <br>
+                    <br>
+                    <i>Game developed by <a target="_blank" href="https://goo.gl/hJA4Ak">Team GESH</a>
+                        <br>
+                        <br>
+                        Winner of the local event:
+                        <br>One Click Jam 2016 - La Paz, Bolivia
+                    </i>
+                    <br><br>
+                    <a target="_blank" href="http://www.paginasiete.bo/miradas/2016/5/1/blind-run-juego-para-videntes-95019.html">Press note (in Spanish)</a>
+                    <br>
+                    <a target="_blank" href="https://teamgesh.itch.io/blind-run">Itch.io project</a>
+                </p>
+                <div class="img-ctn">
+                    <img class="video-img" src="img/blind_run_0.jpg"/>
+                    <img class="video-img" src="img/blind_run_1.jpg"/>
+                </div>
+            </div>
+            <div id="project-2" class="scroll content content-p">
+                <h2 class="dynamic-color">Super Smartket - IoT Hackathon</h2>
+                <p>Super Smartket is a system that uses IoT to improve the experience of customers in supermarkets.
+                    <br>
+                    The system has an AI system that allows customers to receive individual special offers
+                    based on general data and data gathered from the customer.
+                    <br>
+                    <br>
+                    <i>Project developed for the RIoT Hackathon 2016 - La Paz, Bolivia</i>
+                    <br>
+                    <br>
+                    <i>by Jose Eduardo Laruta Espejo,
+                        Evert Ismael Pocoma Copa,
+                        Paulo Sergio Salinas Velez,
+                        and Sergio Javier Valderrama Vidaurre</i>
+                </p>
+                <div class="img-ctn">
+                    <img class="video-img" src="img/super_smartket_0.jpg"/>
+                    <img class="video-img" src="img/super_smartket_1.jpg"/>
+                </div>
+            </div>
+            <div id="project-1" class="scroll content content-p">
+                <h2 class="dynamic-color">Taki Runa - Gobal Game Jam 2016</h2>
+                <p>Berto is a humble native who gets struck by lightning
+                    and acquires the power of a 'Yatiri'.
+                    Now he has to defend the 'Pachamama' (the mother earth) from
+                    the evil gods that live under the earth.
+                    <br><br>
+                    <i>Game developed by <a target="_blank" href="https://goo.gl/hJA4Ak">Team GESH</a></i>
+                </p>
+                <div class="video-ctn" data-url="https://www.youtube.com/embed/ul5eHPZBjV0?autoplay=1">
+                    <span class="video-play-icon"></span>
+                    <img class="video-img" src="img/taki_runa.jpg" alt="Taki Runa - Gameplay" />
+                </div>
+            </div>
+            <div id="project-0" class="scroll content content-p">
+                <h2 class="dynamic-color">My Little Friend - Indie Speed Run 2015</h2>
+                <p>When you were a child you met a baby spider, you became friends and grew up together.
+                    <br>
+                    After some years, you started to feel bad and realized that you didn't have clear memories of your final months together.
+                    <br>
+                    So you decided to visit your old house, where you met your friend...
+                    <br><br>
+                    <i>Game developed by <a target="_blank" href="https://goo.gl/hJA4Ak">Team GESH</a></i>
+                    <br><br>
+                    <a target="_blank" href="http://www.paginasiete.bo/gente/2015/11/20/videojuegos-bolivianos-compiten-concurso-internacional-77469.html">Press note (in Spanish)</a>
+                    <br>
+                    <a target="_blank" href="https://www.indiespeedrun.com/2015wp/game/?game=652699">Indiespeedrun.com project</a>
+                </p>
+                <div class="video-ctn" data-url="https://www.youtube.com/embed/W-SDlQ7JukE?autoplay=1">
+                    <span class="video-play-icon"></span>
+                    <img class="video-img" src="img/my_little_friend.jpg" alt="My LIttle Friend - Gameplay" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content-2" class="scroll content content-p">
+        <h2 class="">Skills divisions</h2>
+        <h2 class="dynamic-color">Platinum</h2>
+        <div class="skill-ctn">
+            <img style="width: 35%;" src="img/unity-logo-white-rgb.png"/>
+        </div>
+        <h2 class="dynamic-color">Gold</h2>
+        <div class="skill-ctn">
+            <img style="width: 23%;" src="img/javascript.png"/>
+            <img style="width: 25%;" src="img/c-logo-icon-28402.png"/>
+        </div>
+        <h2 class="dynamic-color">Silver</h2>
+        <div class="skill-ctn">
+            <img style="width: 37%;" src="img/nodejs-new-pantone-white.png"/>
+            <img style="width: 30%;" src="img/python.png"/>
+        </div>
+        <h2 class="dynamic-color">Bronze</h2>
+        <div class="skill-ctn">
+            <img style="width: 23%;" src="img/cpp_logo.png"/>
+            <img style="width: 30%;" src="img/java.png"/>
+        </div>
+        <br>
+    </div>
+    <div id="content-3" class="content content-p">
+        <h2 class="dynamic-color">Feel free to contact me</h2>
+        <a target="_blank" href="https://www.facebook.com/valde07">
+            <img alt="fb-icon" src="img/FB-f-Logo__white_50.png" class="contact-icon">www.facebook.com/valde07
+        </a>
+        <br>
+        <br>
+        <a target="_blank" href="https://www.linkedin.com/in/sergio-valderrama-07">
+            <img alt="linkedin-icon" src="img/In-White-48px-R.png" class="contact-icon">www.linkedin.com/in/sergio-valderrama-07
+        </a>
+        <br>
+        <br>
+        <a target="_blank" href="mailto:vucket07@gmail.com">
+            <img alt="linkedin-icon" src="img/mail.png" class="contact-icon">vucket07@gmail.com
+        </a>
+    </div>
+</div>
+</body>
+</html>
