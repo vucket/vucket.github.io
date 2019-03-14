@@ -1,0 +1,11 @@
+{
+  "name": "vucket-portfolio",
+  "version": "1.0.0",
+  "dependencies": {
+    "uglify-js": "^3.4.9"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.1"
+  },
+  "author": "Sergio Javier Valderrama Vidaurre"
+}
