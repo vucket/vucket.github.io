@@ -1,0 +1,12 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "linebreak-style": 0,
+    "no-plusplus": "off",
+    "arrow-body-style": ["error", "always"],
+    "global-require": 0
+  }
+}
